@@ -14,3 +14,6 @@ class ScreenOn(Resource):
         
 api.add_resource(ScreenOff,'/screen/off')
 api.add_resource(ScreenOn,'/screen/on')
+
+if __name__ == '__main__':
+    app.run(debug=False)
