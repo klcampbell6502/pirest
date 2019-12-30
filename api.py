@@ -16,4 +16,4 @@ api.add_resource(ScreenOff,'/screen/off')
 api.add_resource(ScreenOn,'/screen/on')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False,port=80, host='0.0.0.0')
