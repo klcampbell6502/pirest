@@ -1,5 +1,9 @@
 from flask import Flask
 from flask_restful import Resource, Api
+
+app = Flask(__name__)
+api = Api(app)
+
 class ScreenOff(Resource):
     def get(self):
         os.system("vcgencmd display_power 0")
